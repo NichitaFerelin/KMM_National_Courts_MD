@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Instanțelor de Judecată Moldova</string>
+
+    <string name="court_info">%s, %s, judecător %s</string>
+    <string name="court_info_short">%s, judecător %s</string>
+
+    <string name="hint_search_field">Tastați denumirea dosarului pentru a căuta…</string>
+
+    <string name="title_retry">Reîncercați</string>
+    <string name="title_hearings_agenda">Agenda ședințelor</string>
+    <string name="title_court_decisions">Hotărârile instanței</string>
+    <string name="title_court_rulings">Încheierile instanței</string>
+    <string name="title_public_summons">Citații publice</string>
+    <string name="title_court_claims_and_cases">Cereri și dosare pendinte</string>
+    <string name="title_reset">Resetați</string>
+    <string name="title_apply">Aplica</string>
+    <string name="title_case_number">Denumirea dosarului</string>
+    <string name="title_case_reference_number">Numărul de referință a dosarului</string>
+    <string name="title_case_status">Statutul dosarului:</string>
+    <string name="title_case_type">Tipul dosarului:</string>
+    <string name="title_registration_date">Data înregistrării:</string>
+    <string name="title_case_subject">Tematica dosarului</string>
+    <string name="title_date_of_pronouncement">Data pronunțării:</string>
+    <string name="title_publication_date">Data publicării:</string>
+    <string name="title_case_object">Obiectul cauzei</string>
+    <string name="title_hearing_result">Rezultatul ședinței</string>
+    <string name="title_summoned_person">Persoana citată:</string>
+</resources>

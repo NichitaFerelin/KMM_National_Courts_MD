@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">National Courts\' Moldova</string>
+
+    <string name="court_info">%s, %s, judge %s</string>
+    <string name="court_info_short">%s, judge %s</string>
+
+    <string name="hint_search_field">Type case name to search…</string>
+
+    <string name="title_retry">Retry</string>
+    <string name="title_hearings_agenda">Hearings agenda</string>
+    <string name="title_court_decisions">Court decisions</string>
+    <string name="title_court_rulings">Court rulings</string>
+    <string name="title_public_summons">Public summons</string>
+    <string name="title_court_claims_and_cases">Court claims and cases</string>
+    <string name="title_reset">Reset</string>
+    <string name="title_apply">Apply</string>
+    <string name="title_case_number">Case number</string>
+    <string name="title_case_reference_number">Case reference number</string>
+    <string name="title_case_status">Case status:</string>
+    <string name="title_case_type">Case type:</string>
+    <string name="title_registration_date">Registration date:</string>
+    <string name="title_case_subject">Case subject</string>
+    <string name="title_date_of_pronouncement">Date of pronouncement:</string>
+    <string name="title_publication_date">Publication date:</string>
+    <string name="title_case_object">Case object</string>
+    <string name="title_hearing_result">Hearing result</string>
+    <string name="title_summoned_person">Summoned person:</string>
+</resources>

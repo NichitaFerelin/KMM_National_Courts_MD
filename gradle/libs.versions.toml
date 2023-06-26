@@ -1,0 +1,46 @@
+[versions]
+agp = "8.2.0-alpha09"
+kotlin = "1.8.21"
+core-ktx = "1.10.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+coroutines = "1.7.1"
+lifecycle = "2.6.1"
+ktor = "2.3.1"
+koin = "3.4.2"
+jsoup = "1.16.1"
+navigation = "2.6.0"
+pagination = "3.1.1"
+googleServices = "4.3.15"
+googleCrashlytics = "2.9.6"
+firebase = "32.1.1"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+ktorCore = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktorOkHttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktorDarwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor" }
+koinCore = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koinAndroid = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }
+navigation = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+navigationFragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+pagination = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagination" }
+googleServices = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+googleCrashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "googleCrashlytics" }
+firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
+firebaseCrashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebaseAnalytics = { group = "com.google.firebase", name = "firebase-analytics" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+
+[bundles]

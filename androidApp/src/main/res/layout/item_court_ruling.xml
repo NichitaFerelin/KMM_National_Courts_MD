@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="14dp"
+    android:paddingVertical="12dp"
+    tools:background="@color/white">
+
+    <TextView
+        android:id="@+id/textViewCaseName"
+        style="@style/TextHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ERMURACHI NATALIA GHEORGHE ERMURACHI NATALIA GHEORGHE ERMURACHI NATALIA GHEORGHE" />
+
+    <TextView
+        android:id="@+id/textViewCaseNumber"
+        style="@style/TextSubheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewCaseName"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaseName"
+        tools:text="03-1r-1131-15032013 03-1r-1131-15032013 03-1r-1131-15032013" />
+
+    <TextView
+        android:id="@+id/textViewCourtInfo"
+        style="@style/TextBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaseNumber"
+        tools:text="Curtea de Apel Balti, Sala de Sedinte nr.3,\njudge Vera Toma" />
+
+    <TextView
+        android:id="@+id/textViewCaseSubjectTitle"
+        style="@style/TextSectionTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_case_subject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCourtInfo" />
+
+    <TextView
+        android:id="@+id/textViewCaseSubjectDescription"
+        style="@style/TextBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaseSubjectTitle"
+        tools:text="Cererea apărătorului condamnatei privind amînarea executării pedepsei pentru femei care au copii în vîrstă de pînă la 8 ani" />
+
+    <TextView
+        android:id="@+id/textViewCaseTypeTitle"
+        style="@style/TextSectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_case_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaseSubjectDescription" />
+
+    <TextView
+        android:id="@+id/textViewCaseTypeDescription"
+        style="@style/TextBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCaseTypeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewCaseTypeTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewCaseTypeTitle"
+        tools:text="Penal" />
+
+    <TextView
+        android:id="@+id/textViewRegistrationDateTitle"
+        style="@style/TextSectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/title_registration_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaseTypeDescription" />
+
+    <TextView
+        android:id="@+id/textViewRegistrationDateDescription"
+        style="@style/TextBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/textViewRegistrationDateTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewRegistrationDateTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewRegistrationDateTitle"
+        tools:text="2022-21-24" />
+
+    <TextView
+        android:id="@+id/textViewCasePublicationDateTitle"
+        style="@style/TextSectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/title_publication_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRegistrationDateDescription" />
+
+    <TextView
+        android:id="@+id/textViewCasePublicationDateDescription"
+        style="@style/TextBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCasePublicationDateTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewCasePublicationDateTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewCasePublicationDateTitle"
+        tools:text="Penal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

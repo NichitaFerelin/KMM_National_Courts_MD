@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Судебные Инстанции Молдовы</string>
+
+    <string name="court_info">%s, %s, судья %s</string>
+    <string name="court_info_short">%s, судья %s</string>
+
+    <string name="hint_search_field">Введите название дела для поиска…</string>
+
+    <string name="title_retry">Повторить</string>
+    <string name="title_hearings_agenda">Информация о судебных заседаниях</string>
+    <string name="title_court_decisions">Судебные решения</string>
+    <string name="title_court_rulings">Судебные определения</string>
+    <string name="title_public_summons">Опубликованные повестки</string>
+    <string name="title_court_claims_and_cases">Судебные иски и дела</string>
+    <string name="title_reset">Сбросить</string>
+    <string name="title_apply">Применить</string>
+    <string name="title_case_number">Название дела</string>
+    <string name="title_case_reference_number">Регистрационный номер дела</string>
+    <string name="title_case_status">Статус дела:</string>
+    <string name="title_case_type">Тип дела:</string>
+    <string name="title_registration_date">Дата регистрации:</string>
+    <string name="title_case_subject">Предмет дела</string>
+    <string name="title_date_of_pronouncement">Дата принятия решения:</string>
+    <string name="title_publication_date">Дала публикации:</string>
+    <string name="title_case_object">Объект дела</string>
+    <string name="title_hearing_result">Результат заседания</string>
+    <string name="title_summoned_person">Вызываемое лицо:</string>
+</resources>

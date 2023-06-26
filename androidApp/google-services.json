@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "780761179442",
+    "project_id": "instante-justice-moldova",
+    "storage_bucket": "instante-justice-moldova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780761179442:android:5d391eb6ce87550c2ce32b",
+        "android_client_info": {
+          "package_name": "com.ferelin.instantejustice.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780761179442-deng4mjg43hdlg8fgik9ffh69sp216d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ferelin.instantejustice.android",
+            "certificate_hash": "97f72cee361620396e5778cd4988683c09b1adff"
+          }
+        },
+        {
+          "client_id": "780761179442-eth9fal6979lncisvf5g4nkhrcd0itih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6z8okWm1zsLoWJq4_kL8v-F3i-KSk7ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780761179442-eth9fal6979lncisvf5g4nkhrcd0itih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
