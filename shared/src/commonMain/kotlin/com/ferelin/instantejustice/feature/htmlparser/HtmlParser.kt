@@ -8,4 +8,6 @@ interface HtmlParser {
     fun parseCourtRulings(html: String): Result<List<InstanteJusticeItem.CourtRulingItem>>
     fun parsePublicSummons(html: String): Result<List<InstanteJusticeItem.PublicSummonItem>>
     fun parseCourtClaimsAndCases(html: String): Result<List<InstanteJusticeItem.CourtClaimAndCaseItem>>
+
+    class EmptyResultException: Exception("No items found to parse object")
 }

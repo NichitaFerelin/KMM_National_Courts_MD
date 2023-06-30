@@ -1,5 +1,9 @@
 <resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents">
-        <item name="android:fontFamily">@font/font_family</item>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:navigationBarColor">#FFF8F8F8</item>
+        <item name="android:statusBarColor">#FFF8F8F8</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">#FFF8F8F8</item>
     </style>
 </resources>

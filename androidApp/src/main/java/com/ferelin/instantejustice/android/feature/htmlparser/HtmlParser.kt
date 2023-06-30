@@ -105,7 +105,10 @@ internal class HtmlParserImpl : HtmlParser {
         transform: (fields: List<String>, pdfUrl: String) -> T
     ): Result<List<T>> = try {
         val document = Jsoup.parse(html)
-        val tableWithData = document.getElementsByTag("tbody").first()!!
+        val tableWithData = document
+            .getElementsByTag("tbody")
+            .first() ?: throw HtmlParser.EmptyResultException()
+
         val tableRows = tableWithData.getElementsByTag("tr")
 
         val result = tableRows.map { tableRow ->

@@ -25,7 +25,7 @@ sealed class InstanteJusticeRequest(val builder: InstanteJusticeRequestBuilder) 
         val dateOfPronouncement: String,
         val caseSubject: String,
     ) : InstanteJusticeRequest(
-        InstanteJusticeRequestBuilder(language, InstanteJusticeType.HEARINGS_AGENDA).apply {
+        InstanteJusticeRequestBuilder(language, InstanteJusticeType.COURT_DECISION).apply {
             this.caseNameV2 = caseName
             this.caseNumberV2 = caseNumber
             this.date = dateOfPronouncement
@@ -50,14 +50,16 @@ sealed class InstanteJusticeRequest(val builder: InstanteJusticeRequestBuilder) 
 
     data class PublicSummonsRequest(
         val language: InstanteJusticeSupportLanguage,
+        val caseName: String,
         val solrDocument: String,
         val caseNumber: String,
         val summonedPerson: String,
         val judge: String
     ) : InstanteJusticeRequest(
         InstanteJusticeRequestBuilder(language, InstanteJusticeType.PUBLIC_SUMMONS).apply {
+            this.caseName = caseName
             this.caseNumberV2 = caseNumber
-            this.solrDoc = solrDocument
+            this.solrDoc = caseName
             this.judge = judge
             this.summoned = summonedPerson
         }

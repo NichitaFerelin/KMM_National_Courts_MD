@@ -30,6 +30,7 @@ kotlin {
             dependencies {
                 implementation(libs.coroutines)
                 implementation(libs.ktorCore)
+                implementation(libs.ktorLogging)
                 implementation(libs.koinCore)
             }
         }

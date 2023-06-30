@@ -2,28 +2,43 @@
 <resources>
     <string name="app_name">Судебные Инстанции Молдовы</string>
 
-    <string name="court_info">%s, %s, судья %s</string>
-    <string name="court_info_short">%s, судья %s</string>
+    <string name="title_app_header">Текущие Исковые заявления и Дела!</string>
+    <string name="title_make_your_first_request">Выполните первый поисковый запрос введя несколько символов в поле выше!</string>
 
-    <string name="hint_search_field">Введите название дела для поиска…</string>
+    <string name="title_hearings_agenda">Заседания</string>
+    <string name="title_court_decisions">Решения</string>
+    <string name="title_court_rulings">Определения</string>
+    <string name="title_public_summons">Повестки</string>
+    <string name="title_court_claims_and_cases">Иски &amp; дела</string>
 
-    <string name="title_retry">Повторить</string>
-    <string name="title_hearings_agenda">Информация о судебных заседаниях</string>
-    <string name="title_court_decisions">Судебные решения</string>
-    <string name="title_court_rulings">Судебные определения</string>
-    <string name="title_public_summons">Опубликованные повестки</string>
-    <string name="title_court_claims_and_cases">Судебные иски и дела</string>
-    <string name="title_reset">Сбросить</string>
-    <string name="title_apply">Применить</string>
-    <string name="title_case_number">Название дела</string>
-    <string name="title_case_reference_number">Регистрационный номер дела</string>
-    <string name="title_case_status">Статус дела:</string>
-    <string name="title_case_type">Тип дела:</string>
-    <string name="title_registration_date">Дата регистрации:</string>
-    <string name="title_case_subject">Предмет дела</string>
-    <string name="title_date_of_pronouncement">Дата принятия решения:</string>
-    <string name="title_publication_date">Дала публикации:</string>
-    <string name="title_case_object">Объект дела</string>
-    <string name="title_hearing_result">Результат заседания</string>
-    <string name="title_summoned_person">Вызываемое лицо:</string>
+    <string name="title_search_for">Поиск</string>
+    <string name="title_search_by">Поиск По</string>
+
+    <string name="body_search_by_case_name">Поиск по Названию Дела</string>
+    <string name="body_search_by_case_number">Поиск по Номеру Дела</string>
+
+    <string name="body_with_dot_separator">%s. %s</string>
+    <string name="body_with_comma_separator">%s, %s</string>
+    <string name="body_registration_date">Дата регистрации: %s</string>
+    <string name="body_pronouncement_date">Дата принятия решения: %s</string>
+    <string name="body_publicationt_date">Дата публикации: %s</string>
+    <string name="body_judge_row">%s, судья %s. %s</string>
+    <string name="body_judge_row_long">%s, судья %s. %s</string>
+    <string name="body_summoned_person">Вызываемое лицо: %s</string>
+
+    <string name="hint_search_field">Начните ввод для поиска…</string>
+    <string name="hint_retry_request">Повторить</string>
+
+    <string name="copy_hearings_agenda">Номер дела: %s\nНазвание дела: %s\Суд: %s, %s, судья %s\nОбъект дела: %s\nДата заседания: %s, %s\nРезультат заседания: %s\nPDf инфо: %s</string>
+    <string name="copy_court_decision">Номер дела:  %s\nНазвание дела:  %s\nСуд: %s, судья %s\nПредмет дела: %s\nДата принятия решения: %s\nДата регистрации: %s\nДата публикации: %s\nPDf инфо: %s</string>
+    <string name="copy_court_ruling">Номер дела:  %s\nНазвание дела:  %s\nСуд: %s, судья %s\nПредмет дела: %s\n Дата регистрации: %s\nДата публикации: %s\nPDf инфо: %s</string>
+    <string name="copy_public_summon">Номер дела:  %s\nНазвание дела:  %s\nСуд: %s, %s, судья %s\nОбъект дела: %s\nВызываемое лицо: %s\nДата публикации: %s\nДата заседания: %s, %s\nPDf инфо: %s</string>
+    <string name="copy_court_claim_cases">Номер дела:  %s\nРегистрационный номер дела: %s\nНазвание дела:  %s\nСуд: %s\nСтатус дела: %s\nТип дела: %s\Дата регистрации: %s\nPDf инфо: %s</string>
+
+    <string name="notification_message_copied">Сообщение Скопировано!</string>
+
+    <string name="error_unknown_host">Сервер не отвечает. Проверьте интернет соединение и повторите попытку.</string>
+    <string name="error_timeout">Время ожидания ответа от сервера вышло. Повторите попытку.</string>
+    <string name="error_no_search_results">Поиск не дал результатов. Попробуйте уточнить запрос.</string>
+    <string name="error_unknown_exception">Произошла неизвестная ошибка. Повторите попытку.</string>
 </resources>

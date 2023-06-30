@@ -16,7 +16,7 @@
         tools:ignore="DataExtractionRules">
 
         <activity
-            android:name=".feature.main.MainActivity"
+            android:name=".feature.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

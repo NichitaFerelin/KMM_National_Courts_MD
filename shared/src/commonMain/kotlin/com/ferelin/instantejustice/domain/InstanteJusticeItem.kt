@@ -2,14 +2,17 @@ package com.ferelin.instantejustice.domain
 
 sealed class InstanteJusticeItem {
 
-    data class CourtClaimAndCaseItem(
+    data class HearingsAgendaItem(
         val courtName: String,
         val caseName: String,
         val caseNumber: String,
-        val caseReferenceNumber: String,
-        val caseStatus: String,
+        val caseObject: String,
         val caseType: String,
-        val registrationDate: String,
+        val judgeName: String,
+        val hearingDate: String,
+        val hearingHour: String,
+        val hearingResult: String,
+        val courtRoom: String,
         val pdfUrlPath: String
     ) : InstanteJusticeItem()
 
@@ -38,20 +41,6 @@ sealed class InstanteJusticeItem {
         val pdfUrlPath: String
     ) : InstanteJusticeItem()
 
-    data class HearingsAgendaItem(
-        val courtName: String,
-        val caseName: String,
-        val caseNumber: String,
-        val caseObject: String,
-        val caseType: String,
-        val judgeName: String,
-        val hearingDate: String,
-        val hearingHour: String,
-        val hearingResult: String,
-        val courtRoom: String,
-        val pdfUrlPath: String
-    ) : InstanteJusticeItem()
-
     data class PublicSummonItem(
         val courtName: String,
         val caseName: String,
@@ -63,6 +52,17 @@ sealed class InstanteJusticeItem {
         val hearingHour: String,
         val summonedPerson: String,
         val courtRoom: String,
+        val pdfUrlPath: String
+    ) : InstanteJusticeItem()
+
+    data class CourtClaimAndCaseItem(
+        val courtName: String,
+        val caseName: String,
+        val caseNumber: String,
+        val caseReferenceNumber: String,
+        val caseStatus: String,
+        val caseType: String,
+        val registrationDate: String,
         val pdfUrlPath: String
     ) : InstanteJusticeItem()
 }

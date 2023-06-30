@@ -1,15 +1,14 @@
 package com.ferelin.instantejustice.data.remote.request
 
+import com.ferelin.instantejustice.data.remote.InstanteJusticeApi
 import com.ferelin.instantejustice.domain.InstanteJusticeSupportLanguage
 import com.ferelin.instantejustice.domain.InstanteJusticeType
 
-private const val BASE_URL = "https://instante.justice.md/"
-
 class InstanteJusticeRequestBuilder(
-    language: InstanteJusticeSupportLanguage,
+    val language: InstanteJusticeSupportLanguage,
     val justiceType: InstanteJusticeType
 ) {
-    var resultUrl: String = "$BASE_URL${language.key}/${justiceType.key}?"
+    var resultUrl: String = "${InstanteJusticeApi.BASE_URL}${language.key}/${justiceType.key}?"
         private set
 
     var caseName: String = ""
@@ -103,6 +102,14 @@ class InstanteJusticeRequestBuilder(
     init {
         court = "All"
         caseType = "All"
+    }
+
+    override fun equals(other: Any?): Boolean {
+        return other is InstanteJusticeRequestBuilder && this.resultUrl == other.resultUrl
+    }
+
+    override fun hashCode(): Int {
+        return resultUrl.hashCode()
     }
 
     fun isEmpty(): Boolean =

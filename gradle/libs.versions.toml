@@ -9,11 +9,20 @@ lifecycle = "2.6.1"
 ktor = "2.3.1"
 koin = "3.4.2"
 jsoup = "1.16.1"
-navigation = "2.6.0"
+browser = "1.2.0"
 pagination = "3.1.1"
+paginationCompose = "1.0.0-alpha20"
 googleServices = "4.3.15"
 googleCrashlytics = "2.9.6"
 firebase = "32.1.1"
+composeBom = "2023.06.01"
+composeKotlinCompiler = "1.4.7"
+composeActivity = "1.7.2"
+composeViewModel = "2.6.1"
+composeRuntimeLifecycle = "2.6.1"
+composeContraintLayout = "1.0.1"
+composeMaterial = "1.4.3"
+composeNavigation = "2.6.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -23,19 +32,31 @@ coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core"
 coroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 ktorCore = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktorAndroid = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+ktorLogging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+koinCompose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
 ktorOkHttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
 ktorDarwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor" }
 koinCore = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
 koinAndroid = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }
-navigation = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
-navigationFragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
 pagination = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagination" }
+browser = { group = "androidx.browser", name = "browser", version.ref = "browser" }
+paginationCompose = { group = "androidx.paging", name = "paging-compose", version.ref = "paginationCompose" }
 googleServices = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
 googleCrashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "googleCrashlytics" }
 firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
 firebaseCrashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
-firebaseAnalytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebaseAnalytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+composeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+composeMaterial = { group = "androidx.compose.material", name = "material", version.ref = "composeMaterial" }
+composeFoundation = { group = "androidx.compose.foundation", name = "foundation" }
+composeUi = { group = "androidx.compose.ui", name = "ui" }
+composeActivity = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }
+composeViewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "composeViewModel" }
+composeLifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "composeRuntimeLifecycle" }
+composeConstraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "composeContraintLayout" }
+composeNavigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "composeNavigation" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -44,3 +65,7 @@ kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 
 [bundles]
+compose = ["composeFoundation", "composeUi", "composeActivity", "composeViewmodel",
+    "composeLifecycle", "composeConstraintLayout", "composeMaterial", "composeNavigation",
+    "paginationCompose"
+]

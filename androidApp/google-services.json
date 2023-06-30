@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "780761179442-un3q5n83kegcf56uoqj77576ukd7ise0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ferelin.instantejustice.android",
+            "certificate_hash": "23fc5f371b3fbb744cbd97940a0cfad666c323eb"
+          }
+        },
+        {
           "client_id": "780761179442-eth9fal6979lncisvf5g4nkhrcd0itih.apps.googleusercontent.com",
           "client_type": 3
         }

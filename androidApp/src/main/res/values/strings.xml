@@ -2,28 +2,43 @@
 <resources>
     <string name="app_name">National Courts\' Moldova</string>
 
-    <string name="court_info">%s, %s, judge %s</string>
-    <string name="court_info_short">%s, judge %s</string>
+    <string name="title_app_header">Hearings and Judicial documents search!</string>
+    <string name="title_make_your_first_request">Make your first search request by typing just few symbols in the field above!</string>
 
-    <string name="hint_search_field">Type case name to search…</string>
-
-    <string name="title_retry">Retry</string>
     <string name="title_hearings_agenda">Hearings agenda</string>
-    <string name="title_court_decisions">Court decisions</string>
-    <string name="title_court_rulings">Court rulings</string>
-    <string name="title_public_summons">Public summons</string>
-    <string name="title_court_claims_and_cases">Court claims and cases</string>
-    <string name="title_reset">Reset</string>
-    <string name="title_apply">Apply</string>
-    <string name="title_case_number">Case number</string>
-    <string name="title_case_reference_number">Case reference number</string>
-    <string name="title_case_status">Case status:</string>
-    <string name="title_case_type">Case type:</string>
-    <string name="title_registration_date">Registration date:</string>
-    <string name="title_case_subject">Case subject</string>
-    <string name="title_date_of_pronouncement">Date of pronouncement:</string>
-    <string name="title_publication_date">Publication date:</string>
-    <string name="title_case_object">Case object</string>
-    <string name="title_hearing_result">Hearing result</string>
-    <string name="title_summoned_person">Summoned person:</string>
+    <string name="title_court_decisions">Decisions</string>
+    <string name="title_court_rulings">Rulings</string>
+    <string name="title_public_summons">Public Summons</string>
+    <string name="title_court_claims_and_cases">Claims &amp; cases</string>
+
+    <string name="title_search_for">Search For</string>
+    <string name="title_search_by">Search By</string>
+
+    <string name="body_search_by_case_name">Search by Case Name</string>
+    <string name="body_search_by_case_number">Search by Case Number</string>
+
+    <string name="body_with_dot_separator">%s. %s</string>
+    <string name="body_with_comma_separator">%s, %s</string>
+    <string name="body_registration_date">Registration date: %s</string>
+    <string name="body_pronouncement_date">Date of pronouncement: %s</string>
+    <string name="body_publicationt_date">Publication date: %s</string>
+    <string name="body_judge_row">%s, judge %s. %s</string>
+    <string name="body_judge_row_long">%s, %s, judge %s. %s</string>
+    <string name="body_summoned_person">Summoned person: %s</string>
+
+    <string name="hint_search_field">Type to search…</string>
+    <string name="hint_retry_request">Retry</string>
+
+    <string name="copy_hearings_agenda">Case number: %s\nCase name: %s\nCourt: %s, %s, judge %s\nCase object: %s\nHearing date: %s, %s\nHearing result: %s\nPDF info: %s</string>
+    <string name="copy_court_decision">Case number: %s\nCase name: %s\nCourt: %s, judge %s\nCase subject: %s\nDate of pronouncement: %s\nRegistration date: %s\nPublication date: %s\nPDF info: %s</string>
+    <string name="copy_court_ruling">Case number: %s\nCase name: %s\nCourt: %s, judge %s\nCase subject: %s\nRegistration date: %s\nPublication date: %s\nPDF info: %s</string>
+    <string name="copy_public_summon">Case number: %s\nCase name: %s\nCourt: %s, %s, judge %s\nCase object: %s\nSummoned person: %s\nPublication date: %s\nHearing date: %s, %s\nPDF info: %s</string>
+    <string name="copy_court_claim_cases">Case number: %s\nCase reference number: %s\nCase name: %s\nCourt: %s\nCase status: %s\nCase type: %s\Registration date: %s\nPDF info: %s</string>
+
+    <string name="notification_message_copied">Message Copied</string>
+
+    <string name="error_unknown_host">The server is not responding. Check your internet connection and try again.</string>
+    <string name="error_timeout">Timed out waiting for a response from the server. Try again.</string>
+    <string name="error_no_search_results">No search results. Try to modify request</string>
+    <string name="error_unknown_exception">An unknown error has occurred. Please try again</string>
 </resources>

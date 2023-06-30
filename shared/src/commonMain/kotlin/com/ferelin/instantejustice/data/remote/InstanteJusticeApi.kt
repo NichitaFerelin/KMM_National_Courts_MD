@@ -8,6 +8,10 @@ import kotlinx.coroutines.withContext
 
 interface InstanteJusticeApi {
     suspend fun load(requestUrl: String): Result<String>
+
+    companion object {
+        const val BASE_URL = "https://instante.justice.md/"
+    }
 }
 
 internal class InstanteJusticeApiImpl(
